@@ -1,0 +1,87 @@
+
+<div data-dx-role="view" data-dx-name="TitleEdit" data-dx-title="Title">
+    <div data-dx-role="command" data-bind="dxCommand: { action: handleSave, location: 'save', title: 'Save', icon: 'save' } "></div>
+    <div data-dx-role="command" data-bind="dxCommand: { action: '#_back', location: 'cancel', behavior: 'back', title: 'Cancel', icon: 'close' }" ></div>
+    <div data-dx-target-placeholder="content">
+        <div data-bind="dxScrollView: { }">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Id: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.Id, readonly: true }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Name: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.Name, placeholder: 'Enter name' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">ShortName: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.ShortName, placeholder: 'Enter shortname' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Synopsis: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.Synopsis, placeholder: 'Enter synopsis' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">ShortSynopsis: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.ShortSynopsis, placeholder: 'Enter shortsynopsis' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">AverageRating: </div>
+                    <div class="dx-field-value" data-bind="dxNumberbox: { value: title.AverageRating, placeholder: 'Enter averagerating' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">ReleaseYear: </div>
+                    <div class="dx-field-value" data-bind="dxNumberbox: { value: title.ReleaseYear, placeholder: 'Enter releaseyear' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Url: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.Url, placeholder: 'Enter url' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Runtime: </div>
+                    <div class="dx-field-value" data-bind="dxNumberbox: { value: title.Runtime, placeholder: 'Enter runtime' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Rating: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.Rating, placeholder: 'Enter rating' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">DateModified: </div>
+                    <div class="dx-field-value" data-bind="dxDatebox: { value: title.DateModified, placeholder: 'Enter datemodified', format: 'date' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Type: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.Type, placeholder: 'Enter type' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">WebsiteUrl: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.WebsiteUrl, placeholder: 'Enter websiteurl' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">NetflixApiId: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.NetflixApiId, placeholder: 'Enter netflixapiid' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">TinyUrl: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.TinyUrl, placeholder: 'Enter tinyurl' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">BluRay: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.BluRay, placeholder: 'Enter bluray' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">BoxArt: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.BoxArt, placeholder: 'Enter boxart' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Dvd: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.Dvd, placeholder: 'Enter dvd' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Instant: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: title.Instant, placeholder: 'Enter instant' }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

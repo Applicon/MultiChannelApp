@@ -1,0 +1,94 @@
+
+<div data-dx-role="view" data-dx-name="TitleDetails" data-dx-title="Title">
+    <div data-dx-role="command" data-bind="dxCommand: { action: '#TitleEdit/{id}', location: 'edit', title: 'Edit', icon: 'edit' }"></div>
+    <div data-dx-role="command" data-bind="dxCommand: { action: handleDelete, location: 'delete', title: 'Delete', icon: 'remove', type: 'danger' }"></div>
+    <div data-dx-target-placeholder="content" >
+        <div data-bind="dxScrollView: { }">
+            <h2 data-bind="text: title.Name"></h2>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Id</div>
+                    <div class="dx-field-value" data-bind="text: title.Id"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Name</div>
+                    <div class="dx-field-value" data-bind="text: title.Name"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">ShortName</div>
+                    <div class="dx-field-value" data-bind="text: title.ShortName"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Synopsis</div>
+                    <div class="dx-field-value" data-bind="text: title.Synopsis"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">ShortSynopsis</div>
+                    <div class="dx-field-value" data-bind="text: title.ShortSynopsis"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">AverageRating</div>
+                    <div class="dx-field-value" data-bind="text: title.AverageRating"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">ReleaseYear</div>
+                    <div class="dx-field-value" data-bind="text: title.ReleaseYear"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Url</div>
+                    <div class="dx-field-value" data-bind="text: title.Url"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Runtime</div>
+                    <div class="dx-field-value" data-bind="text: title.Runtime"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Rating</div>
+                    <div class="dx-field-value" data-bind="text: title.Rating"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">DateModified</div>
+                    <div class="dx-field-value" data-bind="text: title.DateModified"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Type</div>
+                    <div class="dx-field-value" data-bind="text: title.Type"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">WebsiteUrl</div>
+                    <div class="dx-field-value" data-bind="text: title.WebsiteUrl"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">NetflixApiId</div>
+                    <div class="dx-field-value" data-bind="text: title.NetflixApiId"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">TinyUrl</div>
+                    <div class="dx-field-value" data-bind="text: title.TinyUrl"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">BluRay</div>
+                    <div class="dx-field-value" data-bind="text: title.BluRay"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">BoxArt</div>
+                    <div class="dx-field-value" data-bind="text: title.BoxArt"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Dvd</div>
+                    <div class="dx-field-value" data-bind="text: title.Dvd"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Instant</div>
+                    <div class="dx-field-value" data-bind="text: title.Instant"></div>
+                </div>
+			</div>
+            <div data-dx-placeholder="view-footer" data-dx-transition="none"></div>
+        </div>
+        <div id="deleteConfirmation" data-bind="dxPopup: { width: 270, height: 150, title: 'Delete item' }">
+            <div class="msg">Are you sure you want to delete this item?</div>
+            <div class="msg-button-right" data-bind="dxButton: { text: 'Yes', click: handleConfirmDelete  }"></div>
+            <div class="msg-button-left" data-bind="dxButton: { text: 'No', click: handleCancelDelete }"></div>
+        </div>
+    </div>
+</div>

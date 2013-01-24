@@ -1,0 +1,15 @@
+
+<div data-dx-role="view" data-dx-name="GenreEdit" data-dx-title="Genre">
+    <div data-dx-role="command" data-bind="dxCommand: { action: handleSave, location: 'save', title: 'Save', icon: 'save' } "></div>
+    <div data-dx-role="command" data-bind="dxCommand: { action: '#_back', location: 'cancel', behavior: 'back', title: 'Cancel', icon: 'close' }" ></div>
+    <div data-dx-target-placeholder="content">
+        <div data-bind="dxScrollView: { }">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Name: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: genre.Name, readonly: true }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

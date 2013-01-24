@@ -1,0 +1,14 @@
+
+<div data-dx-role="view" data-dx-name="People" data-dx-title="People" data-dx-target-frame="navigation">
+    <div data-dx-role="command" data-bind="dxCommand: { action: '#PersonEdit', location: 'create', title: 'Add', icon: 'plus' }"></div>
+    <div data-dx-target-placeholder="content" >             
+        <div data-bind="dxList: { dataSource: dataSource, pullDown: true }">
+          <div data-dx-name="item" data-dx-role="template" data-bind="dxAction: '#PersonDetails/{Id}'">
+<!--
+                <img height="55" style="padding: 10px; float:left;" data-bind="attr: { src: imageUrlPropertyName }" />
+-->
+                <div class="list-item" data-bind="text: Name"></div>
+          </div>                  
+        </div>
+    </div>
+</div>
