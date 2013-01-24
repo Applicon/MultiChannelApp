@@ -1,5 +1,6 @@
 
 // NOTE object below must be a valid JSON
+// test comment
 window.MultiChannelApp = $.extend(true, window.MultiChannelApp, {
     "config": {
         "defaultLayout": "navbar",
