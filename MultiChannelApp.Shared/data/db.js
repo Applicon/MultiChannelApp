@@ -12,6 +12,7 @@
         }
     });
 
+    //asdf
     function handleServiceError(error) {
         if(window.WinJS) {
             try {
