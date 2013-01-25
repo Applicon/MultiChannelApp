@@ -13,6 +13,7 @@
     });
 
     //asdf
+    // nýtt comment
     function handleServiceError(error) {
         if(window.WinJS) {
             try {

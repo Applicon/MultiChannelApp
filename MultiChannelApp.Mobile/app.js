@@ -13,3 +13,5 @@ $(function() {
     MultiChannelApp.app.router.register(":view/:id", { view: "People", id: undefined });
     MultiChannelApp.app.router.register(":view/:id", { view: "About", id: undefined });
 });
+
+// annað comment
